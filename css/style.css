@@ -1,0 +1,341 @@
+@charset "UTF-8";
+html body {
+  font-family: '游ゴシック体', 'Yu Gothic', YuGothic, sans-serif;
+  font-weight: 500;
+}
+
+body {
+  color: #fff;
+}
+
+.section {
+  width: 100%;
+}
+
+.section-content {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 40px 0px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .5s ease .75s;
+}
+
+.section-content img {
+  max-width: 80%;
+  margin-top: 5%;
+}
+
+.section3 .section-content img {
+  max-width: 90%;
+  margin-top: 25%;
+}
+
+.section-red {
+  background-color: #ff6363;
+}
+
+.section-blue {
+  background-color: #8fbbff;
+}
+
+.section-green {
+  background-color: #fff;
+}
+
+.section-black {
+  background-color: #000;
+}
+
+.section.is-show .section-content {
+  opacity: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .section1 .section-content,
+  .section2 .section-content,
+  .section3 .section-content {
+    padding-top: 45%;
+  }
+  .section1 .section-content img,
+  .section2 .section-content img,
+  .section3 .section-content img {
+    padding-top: 0%;
+    max-width: 90%;
+    position: relative;
+    left: 12px;
+  }
+}
+
+.section-content .kara-section {
+  margin: 0 -5%;
+}
+
+.section-content .kara-section .kara-info {
+  background-repeat: no-repeat;
+  height: 126px;
+  cursor: pointer;
+}
+
+.section-content .kara-section .kara-info.kara-info__left {
+  text-align: left;
+  background-position: 100% 38%;
+  background-size: 45%;
+}
+
+.section-content .kara-section .kara-info.kara-info__right {
+  text-align: right;
+  background-position: 0 38%;
+  background-size: 45%;
+}
+
+.section-content .kara-section .kara-info .kara-info__item {
+  background-color: #0006;
+  padding: 4%;
+  height: 126px;
+  position: relative;
+}
+
+.section-content .kara-section .kara-info .kara-info__item h1 {
+  font-weight: bold;
+  text-shadow: 3px 2px 3px #000;
+  font-family: serif;
+  position: absolute;
+  top: 0px;
+  letter-spacing: 2px;
+}
+
+.section-content .kara-section .kara-info .kara-info__item h1 span {
+  font-size: 1.5em;
+}
+
+.section-content .kara-section .kara-info.kara-info__miso h1 {
+  right: 2%;
+}
+
+.section-content .kara-section .kara-info.kara-info__nakatsu h1 {
+  top: 45%;
+}
+
+.section-content .kara-section .kara-info.kara-info__sanzoku h1 {
+  right: 2%;
+}
+
+.section-content .kara-section .kara-info.kara-info__kuro h1 span {
+  background-color: #fff;
+  text-shadow: none;
+}
+
+.section-content .kara-section .kara-info.kara-info__nanban h1 {
+  right: 2%;
+}
+
+.section-content .kara-section .kara-info.kara-info__hanba h1 {
+  top: 23%;
+  left: 8%;
+}
+
+.section-content .kara-section .kara-info.kara-info__zangi h1 {
+  right: 2%;
+  margin: 0;
+}
+
+.section-content .kara-section .kara-info.kara-info__zangi h1 p {
+  margin: 0;
+}
+
+footer.section6,
+.section6 h2 {
+  color: #ccc;
+}
+
+.section6 h2 {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+.kara-footer__body {
+  padding-top: 30%;
+}
+
+h2 {
+  color: #232323;
+}
+
+h2:first-child {
+  margin-top: 0;
+}
+
+h3 {
+  color: #232323;
+}
+
+p {
+  color: #fff;
+}
+
+.main {
+  position: relative;
+}
+
+.pager {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 0;
+}
+
+.pager li {
+  display: block;
+  margin: 20px;
+}
+
+.pager li a {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.pager .is-current a {
+  background: #232323;
+}
+
+.text-red {
+  color: red;
+}
+
+.text-black {
+  color: #000;
+}
+
+.modal-header h2 .text-black {
+  background-color: #fff;
+}
+
+.modal-body {
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: 65%;
+  background-position: 125% 10%;
+  padding: 0;
+}
+
+.modal-header {
+  border: 0;
+  border-radius: 0;
+}
+
+.modal-header h2 {
+  color: #fff;
+  font-family: serif;
+  font-weight: bold;
+}
+
+.modal-header .close {
+  color: #fff;
+}
+
+.modal-content {
+  border-radius: 0;
+  background: #000;
+  height: -webkit-fill-available;
+}
+
+.modal-dialog {
+  max-width: 100%;
+  margin: auto;
+  border-radius: 0;
+}
+
+.modal-footer {
+  border: 0;
+}
+
+.modal-kara__info {
+  background-color: #00000080;
+  width: 65%;
+  padding: 12px;
+}
+
+.modal-kara__info h4 {
+  font-weight: bold;
+  font-family: serif;
+  line-height: 1.4em;
+}
+
+.modal-kara__info h5 {
+  font-family: serif;
+  font-weight: bold;
+  margin-top: 24px;
+}
+
+.modal-kara__info p {
+  text-align: justify;
+}
+
+@media screen and (max-width: 767px) {
+  .modal-header {
+    padding-bottom: 0;
+  }
+  .modal-header h2 {
+    font-size: 28px;
+  }
+  .modal-kara__info {
+    width: 100%;
+    padding-top: 6px;
+  }
+  .modal-kara__info h4 {
+    font-size: 20px;
+  }
+  .modal-kara__info h5 {
+    font-size: 20px;
+    margin-top: 18px;
+  }
+  .modal-kara__info p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .modal-kara__info h5 {
+    font-size: 18px;
+    margin-top: 18px;
+  }
+  .modal-kara__info p {
+    font-size: 15.5px;
+  }
+}
+
+@media screen and (min-width: 476px) and (max-width: 600px) {
+  .modal-kara__info p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .modal-header {
+    padding-top: 4px;
+  }
+  .modal-header h2 {
+    font-size: 22px;
+  }
+  .modal-kara__info {
+    padding-top: 0;
+  }
+  .modal-kara__info p {
+    font-size: 14px;
+  }
+  .modal-kara__info h4 {
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+  .modal-kara__info h5 {
+    font-size: 16px;
+    margin-top: 6px;
+    margin-bottom: 4px;
+  }
+}

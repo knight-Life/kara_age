@@ -1,1 +1,151 @@
-Hello World
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>地下調理場最大から揚げトーナメント編</title>
+  <link rel="stylesheet" href="dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <style>
+    .section-content .kara-section .kara-info.kara-info__teba {
+      background-image: url(image/compression/kara_photo/teba.png);
+    }
+  </style>
+  <main class="main">
+    <article>
+      <section class="section section1 section-black js-section" data-section-name="section1">
+        <div class="section-content">
+          <img src="image/compression/top/kara_top_1.png">
+        </div>
+      </section>
+      <section class="section section2 section-black js-section" data-section-name="section2">
+        <div class="section-content">
+          <img src="image/compression/top/kara_top_2.png">
+        </div>
+      </section>
+      <section class="section section3 section-black js-section" data-section-name="section3">
+        <div class="section-content">
+          <img src="image/compression/top/kara_top_3.png">
+        </div>
+      </section>
+
+      <section class="section section4 section-black js-section" data-section-name="section4">
+        <div class="section-content">
+          <div class="kara-section">
+            <div id="teba" class="kara-info kara-info__teba kara-info__left" data-toggle="modal" data-target="#js-Modal">
+              <div class="kara-info__item">
+                <h1>手<span class="text-red">羽</span>先唐揚げ</h1>
+              </div>
+            </div>
+            <div id="miso" class="kara-info kara-info__miso kara-info__right" data-toggle="modal" data-target="#js-Modal">
+              <div class="kara-info__item">
+                <h1>印西みそ<span class="text-red">ピー</span><br>唐揚げ</h1>
+              </div>
+            </div>
+            <div id="nakatsu" class="kara-info kara-info__nakatsu kara-info__left" data-toggle="modal" data-target="#js-Modal">
+              <div class="kara-info__item">
+                <h1>中<span class="text-red">津</span>からあげ</h1>
+              </div>
+            </div>
+            <div id="sanzoku" class="kara-info kara-info__sanzoku kara-info__right" data-toggle="modal" data-target="#js-Modal">
+              <div class="kara-info__item">
+                <h1><span class="text-red">山</span>賊<br>焼</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section5 section-black js-section" data-section-name="section5">
+        <div class="section-content">
+          <div class="kara-section">
+            <div id="kuro" class="kara-info kara-info__kuro kara-info__left" data-toggle="modal" data-target="#js-Modal">
+              <div class="kara-info__item">
+                <h1><span class="text-black">黒</span><br>からあげ</h1>
+              </div>
+            </div>
+            <div id="nanban" class="kara-info kara-info__nanban kara-info__right" data-toggle="modal" data-target="#js-Modal">
+              <div class="kara-info__item">
+                <h1>チキン<br><span class="text-red">南蛮</span></h1>
+              </div>
+            </div>
+            <div id="hanba" class="kara-info kara-info__hanba kara-info__left" data-toggle="modal" data-target="#js-Modal">
+              <div class="kara-info__item">
+                <h1>半<span class="text-red">羽</span>揚げ</h1>
+              </div>
+            </div>
+            <div id="zangi" class="kara-info kara-info__zangi kara-info__right" data-toggle="modal" data-target="#js-Modal">
+              <div class="kara-info__item">
+                <h1><p>ザン</p><span class="text-red">ギ</span></h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="section section6 section-black js-section" data-section-name="section6">
+        <div class="kara-footer__body container">
+          <h2 class="text-center">使用言語・プラグイン</h2>
+          <div class="text-center row">
+            <div class="col-sm-4"><p class="text-monospace">HTML5</p></div>
+            <div class="col-sm-4"><p class="text-monospace">CSS3</p></div>
+            <div class="col-sm-4"><p class="text-monospace">JavaScript</p></div>
+          </div>
+          <div class="text-center row">
+            <div class="col-sm-3"><p class="text-monospace">jQuery</p></div>
+            <div class="col-sm-3"><p class="text-monospace">scroldivfy.js</p></div>
+            <div class="col-sm-3"><p class="text-monospace">Bootstrap4</p></div>
+            <div class="col-sm-3"><p class="text-monospace">Sass</p></div>
+          </div>
+        </div>
+      </footer>
+    </article>
+    <nav>
+      <ul class="pager" id="js-pager"></ul>
+    </nav>
+  </main>
+
+  <div class="modal fade" id="js-Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h2 class="modal-title" id="js-ModalLabel"></h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fas fa-times"></i></span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="modal-kara__info">
+            <h4></h4>
+            <h5>歴史ッッ!!!</h5>
+            <p></p>
+          </div>
+          <div class="modal-kara__img">
+            <img src="" alt="からあげ">
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger btn-lg">投票ッッ!!!</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="dist/js/bootstrap.min.js"></script>
+  <script src="dist/js/jquery.scrollify.js"></script>
+  <script src="dist/js/custom.js"></script>
+</body>
+
+</html>

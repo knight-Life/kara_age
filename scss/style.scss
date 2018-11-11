@@ -1,0 +1,255 @@
+html body{
+  font-family: '游ゴシック体', 'Yu Gothic', YuGothic, sans-serif;
+  font-weight: 500;
+}
+
+body{
+  color: #fff;
+}
+
+.section {
+  width: 100%;
+
+  &-content {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 40px 0px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .5s ease .75s;
+    img {
+      max-width: 80%;
+      margin-top: 5%;
+      .section3 &{
+        max-width: 90%;
+        margin-top: 25%;
+      }
+    }
+  }
+
+  &-red {
+    background-color: #ff6363;
+  }
+
+  &-blue {
+    background-color: #8fbbff;
+  }
+
+  &-green {
+    background-color: #fff;
+  }
+
+  &-black{
+    background-color: #000;
+  }
+
+  &.is-show{
+    .section-content{
+      opacity: 1;
+    }
+  }
+
+}
+
+
+@media screen and (max-width:767px){
+ .section-content {
+    .section1 &,
+    .section2 &,
+    .section3 & {
+      padding-top: 45%;
+      img {
+        padding-top: 0%;
+        max-width: 90%;
+        position:relative;
+        left: 12px;
+      }
+    }
+  }
+}
+
+
+
+.section{
+  &-content{
+
+    .kara-section{
+      margin: 0 -5%;
+      .kara-info{
+        background-repeat: no-repeat;
+        height: 126px;
+        cursor: pointer;
+
+        &.kara-info__left {
+          text-align: left;
+          background-position: 100% 38%;
+          background-size: 45%;
+        }
+
+        &.kara-info__right {
+          text-align: right;
+          background-position: 0 38%;
+          background-size: 45%;
+        }
+
+        .kara-info__item{
+          background-color: #0006;
+          padding: 4%;
+          height: 126px;
+          position: relative;
+
+          h1{
+            font-weight: bold;
+            text-shadow: 3px 2px 3px #000;
+            font-family: serif;
+            position: absolute;
+            top: 0px;
+            letter-spacing: 2px;
+            span{
+              font-size: 1.5em;
+            }
+          }
+        }
+
+        &.kara-info__teba{
+          // background-image:url("image/compression/kara_photo/teba.png");
+        }
+
+        &.kara-info__miso{
+          // background-image: url("image/compression/kara_photo/miso.png");
+          h1{
+            right: 2%;
+          }
+        }
+
+        &.kara-info__nakatsu{
+          // background-image: url("image/compression/kara_photo/nakatsu.png");
+          h1{
+            top: 45%;
+          }
+        }
+
+        &.kara-info__sanzoku{
+          // background-image: url("image/compression/kara_photo/sanzoku.png");
+          h1{
+            right: 2%;
+          }
+        }
+
+        &.kara-info__kuro{
+          // background-image: url("image/compression/kara_photo/kurokara.png");
+          h1{
+            span{
+              background-color: #fff;
+              text-shadow: none;
+            }
+          }
+        }
+
+        &.kara-info__nanban{
+          // background-image: url("image/compression/kara_photo/nanban.png");
+          h1{
+            right: 2%;
+          }
+        }
+
+        &.kara-info__hanba{
+          // background-image: url("image/compression/kara_photo/hanba.png");
+          h1{
+            top: 23%;
+            left: 8%;
+          }
+        }
+
+        &.kara-info__zangi{
+          // background-image: url("image/compression/kara_photo/zangi.png");
+          h1{
+            right: 2%;
+            margin: 0;
+            p{
+              margin: 0;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+
+footer.section6,
+.section6 h2 {
+    color: #ccc;
+}
+.section6 h2{
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+.kara-footer__body{
+  padding-top: 30%;
+}
+
+
+h2 {
+  color: #232323;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+h3 {
+  color: #232323;
+}
+
+p {
+  color: #fff;
+}
+
+
+.main{
+  position: relative;
+}
+
+.pager{
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  padding: 0;
+
+  li{
+    display: block;
+    margin: 20px;
+    a{
+      display: block;
+      width: 10px;
+      height: 10px;
+      background: #fff;
+      border-radius: 50%;
+    }
+  }
+
+  .is-current{
+    a{
+      background: #232323;
+    }
+  }
+}
+
+
+.text-{
+  &red{
+    color: red;
+  }
+
+  &black{
+    color: #000;
+    .modal-header h2 &{
+      background-color: #fff;
+    }
+  }
+}
+
+
+@import "_modalCustom";
